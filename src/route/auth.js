@@ -6,14 +6,23 @@ const router = express.Router()
 const { User } = require('../class/user')
 const { Confirm } = require('../class/confirm')
 const { Session } = require('../class/session')
-const { use } = require('.')
+
 
 User.create({
   email: 'test@mail.com',
   password: 123,
   role: 1,
 })
-
+User.create({
+	email: 'test1@mail.com',
+	password: 123,
+	role: 2,
+  })
+  User.create({
+	email: 'test3@mail.com',
+	password: 123,
+	role: 3,
+  })
 // ================================================================
 
 // router.get Створює нам один ентпоїнт

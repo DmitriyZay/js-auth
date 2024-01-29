@@ -73,6 +73,9 @@ router.get('/logout', function (req, res) {
 const auth=require ('./auth')
 // Підключаємо роутер до бек-енду
 router.use('/', auth)
-
+//==============
+const user=require ('./user')
+// Підключаємо роутер до бек-енду
+router.use('/', user)
 
 module.exports = router
